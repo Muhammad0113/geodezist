@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenusController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +45,8 @@ Route::get('/contact', function () {
 Route::get('/elements', function () {
     return view('template.elements');
 })->name('template.elements');
+
+Route::resource('menus', MenusController::class);
 
 
 // Route::get('/main', function () {
