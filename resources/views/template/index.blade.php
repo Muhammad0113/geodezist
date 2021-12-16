@@ -18,7 +18,7 @@
                         <a href="apply.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Apply for Loan</a>
                     </div>
                     <div class="hero__img">
-                        <img src="/img/hero/hero_img.jpg" alt="">
+                        <img src="/img/hero/banner1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -32,11 +32,12 @@
                         <a href="apply.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Apply for Loan</a>
                     </div>
                     <div class="hero__img">
-                        <img src="/img/hero/hero_img2.jpg" alt="">
+                        <img src="/img/hero/banner2.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        <br>
         <!-- slider-footer Start -->
         <div class="slider-footer section-bg d-none d-sm-block">
             <div class="footer-wrapper">
