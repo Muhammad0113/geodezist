@@ -14,25 +14,16 @@
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav> 
-                                <ul id="navigation">  
-                                    <li class="active"><a href="{{ route('template.index') }}">Home</a></li>
-                                    <li><a href="{{ route('template.about') }}">About</a></li>
-                                    <li><a href="{{ route('template.services') }}">Services</a></li>
-                                    <li><a href="{{ route('template.blog') }}">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="{{ route('template.blog') }}">Blog</a></li>
-                                            <li><a href="{{ route('template.blog_details') }}">Blog Details</a></li>
-                                            <li><a href="{{ route('template.elements') }}">Element</a></li>
-                                            <li><a href="{{ route('template.apply') }}">Apply Now</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="{{ route('template.contact') }}">Contact</a></li>
+                                <ul id="navigation">
+                                    @foreach($menus as $menu)
+                                        <li><a href="{{ route('menus.show', ['menu' => $menu->slug]) }}">{{ $menu->name }}</a></li>
+                                    @endforeach                                   
                                 </ul>
                             </nav>
                         </div>
-                        <div class="header-right-btn f-right d-none d-lg-block">
+                        <!-- <div class="header-right-btn f-right d-none d-lg-block">
                             <a href="#" class="btn header-btn">+880.762.009.00 </a>
-                        </div>
+                        </div> -->
                     </div>
                     </div>   
                     <!-- Mobile Menu -->

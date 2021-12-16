@@ -27,6 +27,7 @@ class MenusController extends Controller
     {
         $menu = new Menu();
 
+
         return view('menus.create', [
             'menu' => $menu
         ]);

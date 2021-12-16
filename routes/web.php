@@ -14,23 +14,23 @@ use App\Http\Controllers\MenusController;
 |
 */
 
-Route::get('/', function () {
+Route::get('menus/bosh-sahifa', function () {
     return view('template.index');
 })->name('template.index');
 
-Route::get('/services', function () {
+Route::get('menus/yangiliklar', function () {
     return view('template.services');
 })->name('template.services');
 
-Route::get('/about', function () {
+Route::get('menus/biz-haqimizda', function () {
     return view('template.about');
 })->name('template.about');
 
-Route::get('/apply', function () {
+Route::get('menus/uskunalar', function () {
     return view('template.apply');
 })->name('template.apply');
 
-Route::get('/blog', function () {
+Route::get('menus/xizmatlar', function () {
     return view('template.blog');
 })->name('template.blog');
 
