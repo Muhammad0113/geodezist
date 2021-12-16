@@ -14,6 +14,10 @@ use App\Http\Controllers\MenusController;
 |
 */
 
+Route::get('/', function () {
+    return view('template.index');
+})->name('template.index1');
+
 Route::get('menus/bosh-sahifa', function () {
     return view('template.index');
 })->name('template.index');

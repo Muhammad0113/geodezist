@@ -12,8 +12,8 @@
             <div class="single-slider">
                 <div class="slider-cap-wrapper">
                     <div class="hero__caption">
-                        <p data-animation="fadeInLeft" data-delay=".2s">Achieve your financial goal</p>
-                        <h1 data-animation="fadeInLeft" data-delay=".5s">Small Business Loans For Daily Expenses.</h1>
+                        <p data-animation="fadeInLeft" data-delay=".1s">Achieve your financial goal</p>
+                        <h1 data-animation="fadeInLeft" data-delay=".3s">Small Business Loans For Daily Expenses.</h1>
                         <!-- Hero Btn -->
                         <a href="apply.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Apply for Loan</a>
                     </div>
@@ -26,8 +26,8 @@
             <div class="single-slider">
                 <div class="slider-cap-wrapper">
                     <div class="hero__caption">
-                        <p data-animation="fadeInLeft" data-delay=".2s">Achieve your financial goal</p>
-                        <h1 data-animation="fadeInLeft" data-delay=".5s">Small Business Loans For Daily Expenses.</h1>
+                        <p data-animation="fadeInLeft" data-delay=".1s">Achieve your financial goal</p>
+                        <h1 data-animation="fadeInLeft" data-delay=".3s">Small Business Loans For Daily Expenses.</h1>
                         <!-- Hero Btn -->
                         <a href="apply.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay=".8s">Apply for Loan</a>
                     </div>
