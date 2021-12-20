@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Menu;
+use Illuminate\Support\Facades\DB;
 
 
 class MenusController extends Controller
@@ -25,10 +26,13 @@ class MenusController extends Controller
      */
     public function create()
     {
+       
+        $menu_submenu = Menu::all();
         $menu = new Menu();
 
 
         return view('menus.create', [
+            'menu_submenu' => $menu_submenu,
             'menu' => $menu
         ]);
     }

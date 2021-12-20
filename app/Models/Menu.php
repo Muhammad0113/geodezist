@@ -13,7 +13,7 @@ class Menu extends Model
     protected $table = "menus";
     protected $primaryKey = "id";
 
-    protected $fillable = ['name', 'slug', 'description'];
+    protected $fillable = ['name', 'slug', 'description', 'menu_id'];
 
     public function sluggable(): array
     {

@@ -15,9 +15,23 @@
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">
-                                    @foreach($menus as $menu)
-                                        <li><a href="{{ route('menus.show', ['menu' => $menu->slug]) }}">{{ $menu->name }}</a></li>
-                                    @endforeach                                   
+
+                                    @foreach($menus as $menu)      
+                                            @if(!$menu->menu_id)
+                                                <li><a href="{{ route('menus.show', ['menu' => $menu->slug]) }}">{{ $menu->name }}</a>    
+                                            @endif
+                                            @if($menu->is_submenu)
+                                                <ul class="submenu">
+                                                @foreach($menus as $menu_)
+                                                    @if($menu->id == $menu_->menu_id)
+                                                        <li><a href="{{ route('menus.show', ['menu' => $menu_->slug]) }}">{{ $menu_->name }}</a></li>
+                                                    @endif
+                                                @endforeach
+                                                </ul>
+                                            @endif
+                                            </li>
+                                    @endforeach  
+                       
                                 </ul>
                             </nav>
                         </div>
