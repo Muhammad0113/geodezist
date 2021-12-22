@@ -6,7 +6,7 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="{{ route('template.index1') }}"><img src="/img/logo/logo.png" alt=""></a>
+                            <a href="{{ route('template.index1') }}"><img src="/img/logo/logo3.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
@@ -15,7 +15,6 @@
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav> 
                                 <ul id="navigation">
-
                                     @foreach($menus as $menu)      
                                             @if(!$menu->menu_id)
                                                 <li><a href="{{ route('menus.show', ['menu' => $menu->slug]) }}">{{ $menu->name }}</a>    
@@ -31,7 +30,6 @@
                                             @endif
                                             </li>
                                     @endforeach  
-                       
                                 </ul>
                             </nav>
                         </div>

@@ -24,27 +24,23 @@ Route::get('menus/bosh-sahifa', function () {
 
 Route::get('menus/yangiliklar', function () {
     return view('template.services');
-})->name('template.services');
-
-Route::get('menus/biz-haqimizda', function () {
-    return view('template.about');
-})->name('template.about');
+})->name('yangiliklar');
 
 Route::get('menus/uskunalar', function () {
     return view('template.apply');
-})->name('template.apply');
+})->name('uskunalar');
 
 Route::get('menus/xizmatlar', function () {
     return view('template.blog');
-})->name('template.blog');
+})->name('murojaatlar');
 
-Route::get('/blog_details', function () {
+Route::get('menus/resurslar', function () {
     return view('template.blog_details');
-})->name('template.blog_details');
+})->name('resurslar');
 
-Route::get('/contact', function () {
+Route::get('menus/boglanish', function () {
     return view('template.contact');
-})->name('template.contact');
+})->name('boglanish');
 
 Route::get('/elements', function () {
     return view('template.elements');

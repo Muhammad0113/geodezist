@@ -8,10 +8,10 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="/img/logo/logo2_footer.png" alt=""></a>
+                                    <a href="{{ route('template.index1') }}"><img src="/img/logo/logo3_foot.png" alt=""></a>
                                 </div>
                                 <div class="footer-pera">
-                                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing</p>
+                                    <p>Geodeziya sohasiga tegishli barcha ma'lumotlar, ish topish va vakansiya qoldirish imkoniyati. Bularning barchasi <a href="{{ route('template.index1') }}">geodezist.uz</a> da</p>
                                </div>
                             </div>
                         </div>
@@ -19,12 +19,13 @@
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Quick Link</h4>
+                                <h4>Bosh sahifa</h4>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Offers & Discounts</a></li>
-                                    <li><a href="#">Get Coupon</a></li>
-                                    <li><a href="#"> Contact Us</a></li>
+                                    <li><a href="{{ route('yangiliklar') }}">Yangiliklar</a></li>
+                                    <li><a href="{{ route('uskunalar') }}">Uskunalar</a></li>
+                                    <li><a href="{{ route('murojaatlar') }}">Murojaatlar</a></li>
+                                    <li><a href="{{ route('resurslar') }}">Resurlar</a></li>
+                                    <li><a href="{{ route('boglanish') }}">Bog'lanish</a></li>
                                 </ul>
                             </div>
                         </div>
