@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenusController;
+use App\Http\Controllers\CitizensController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,10 +31,6 @@ Route::get('menus/uskunalar', function () {
     return view('template.apply');
 })->name('uskunalar');
 
-Route::get('menus/xizmatlar', function () {
-    return view('template.blog');
-})->name('murojaatlar');
-
 Route::get('menus/resurslar', function () {
     return view('template.blog_details');
 })->name('resurslar');
@@ -48,7 +45,13 @@ Route::get('/elements', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('template.index');
+})->name('template.index2');
+
+Route::resource('citizens', CitizensController::class);
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['role:admin']], function () {
     Route::resource('menus', MenusController::class);

@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Models\Region;
+use Illuminate\Pagination\Paginator;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +26,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $regions = Region::select('id','name_uz')->get();
+        $this->regions = $regions;
+
+        view()->composer('auth.register', function($view) {
+            $view->with(['regions' => $this->regions]);
+        });
+
+        Paginator::useBootstrap();
     }
 }

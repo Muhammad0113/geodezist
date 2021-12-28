@@ -134,7 +134,7 @@
                             <span class="flaticon-work"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="{{ route('murojaatlar') }}">Business Loan</a></h5>
+                            <h5><a href="#">Business Loan</a></h5>
                             <p>Consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore</p>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                             <span class="flaticon-loan"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="{{ route('murojaatlar') }}">Commercial Loans</a></h5>
+                            <h5><a href="#">Commercial Loans</a></h5>
                             <p>Consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore</p>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                             <span class="flaticon-loan-1"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="{{ route('murojaatlar') }}">Construction Loans</a></h5>
+                            <h5><a href="#">Construction Loans</a></h5>
                             <p>Consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore</p>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                             <span class="flaticon-like"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="{{ route('murojaatlar') }}">Business Loan</a></h5>
+                            <h5><a href="#">Business Loan</a></h5>
                             <p>Consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore</p>
                         </div>
                     </div>

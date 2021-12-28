@@ -14,7 +14,7 @@
 						<div class="single-form">
 							<label for="menus" class="form-label">Menus</label>
 							<select class="form-control" name="menu_id">
-									<option value="0">---</option>
+									<option value="">---</option>
 								@foreach($menu_submenu as $sub_menu)
 									<option value="{{$sub_menu->id}}">{{ $sub_menu->name }}</option>
 								@endforeach

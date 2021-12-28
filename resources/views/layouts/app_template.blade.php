@@ -78,12 +78,14 @@
         <script src="/js/contact.js"></script>
         <script src="/js/jquery.form.js"></script>
         <script src="/js/jquery.validate.min.js"></script>
+        <script src="/js/jquery.inputmask.bundle.js"></script>
         <script src="/js/mail-script.js"></script>
         <script src="/js/jquery.ajaxchimp.min.js"></script>
         
         <!-- Jquery Plugins, main Jquery -->    
         <script src="/js/plugins.js"></script>
         <script src="/js/main.js"></script>
+        <script src="/js/script.js"></script>
         
     </body>
 </html>

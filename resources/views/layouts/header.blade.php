@@ -29,7 +29,38 @@
                                                 </ul>
                                             @endif
                                             </li>
-                                    @endforeach  
+                                    @endforeach
+                                    @guest
+                                        @if (Route::has('login'))
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                            </li>
+                                        @endif
+
+                                        @if (Route::has('register'))
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                            </li>
+                                        @endif
+                                    @else
+                                        <li><a href="{{ route('citizens.index') }}">Murojaatlar</a>
+                                            <ul class="submenu">
+                                                <li><a href="{{ route('citizens.create') }}">{{ __('Rezume') }}</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                {{ __('Chiqish') }}
+                                            </a>
+
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                        </li>
+                                    @endguest
+                                    
                                 </ul>
                             </nav>
                         </div>

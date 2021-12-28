@@ -5,9 +5,11 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Models\Region;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+
 
 class RegisterController extends Controller
 {
@@ -66,9 +68,21 @@ class RegisterController extends Controller
     {
         $user = User::create([
             'name' => $data['name'],
+            'phone' => $data['phone'],
+            'region_id' => $data['region_id'],
+            'city_id' => '1',
+            'specialist' => $data['specialist'],
+            'old' => $data['old'],
             'email' => $data['email'],
+            'gender' => $data['gender'],
             'password' => Hash::make($data['password']),
         ]);
+
+        if (request()->hasFile('avatar')) {
+            $avatar = request()->file('avatar')->getClientOriginalName();
+            request()->file('avatar')->storeAs('avatars', $user->id . '/' . $avatar, '');
+            $user->update(['avatar' => $avatar]);
+        }
 
         $user->assignRole('user');
 

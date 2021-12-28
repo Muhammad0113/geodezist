@@ -23,7 +23,6 @@
                                 <ul>
                                     <li><a href="{{ route('yangiliklar') }}">Yangiliklar</a></li>
                                     <li><a href="{{ route('uskunalar') }}">Uskunalar</a></li>
-                                    <li><a href="{{ route('murojaatlar') }}">Murojaatlar</a></li>
                                     <li><a href="{{ route('resurslar') }}">Resurlar</a></li>
                                     <li><a href="{{ route('boglanish') }}">Bog'lanish</a></li>
                                 </ul>
