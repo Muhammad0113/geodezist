@@ -8,14 +8,14 @@
     </div>
     <div class="col-3">
         <div class="single-form">
-            <label for="number">{{ __('raqam') }}</label>
+            <label for="number">{{ __('raqam *') }}</label>
             <input id="passport" type="text" class="number form-control" name="number" value="{{ old('passport') ?? $citizen->passport }}" required>
         </div>
     </div>
     <div class="col-5">
         <div class="single-form">
-            <label for="fullname">{{ __('F.I.O') }}</label>
-            <input id="fullname" type="text" class="form-control" name="fullname" value="{{ old('fullname') ?? $citizen->fullname }}" required>
+            <label for="fullname">{{ __('F.I.O *') }}</label>
+            <input id="fullname" type="text" class="form-control" name="fullname" value="{{ old('fullname') ?? $citizen->fullname }}" required placeholder="F.I.O ni kiriting...">
         </div>
     </div>
 </div>
@@ -23,13 +23,13 @@
     <div class="col-md-1"></div>
     <div class="col-md-4">
         <div class="single-form">
-            <label for="phone_number">{{ __('Telefon raqam') }}</label>
-            <input id="phone_number" type="text" class="phone form-control" name="phone_number" value="{{ old('phone_number') ?? $citizen->phone_number }}" required>
+            <label for="phone_number">{{ __('Telefon raqam *') }}</label>
+            <input id="phone_number" type="text" class="phone form-control" name="phone_number" value="{{ old('phone_number') ?? $citizen->phone_number }}" required placeholder="Telefon raqamni kiriting...">
         </div>
     </div>
     <div class="col-md-4">
         <div class="single-form d-flex">
-            <label for="gender">{{ __('Jinsi') }}</label>
+            <label for="gender" class="pt-50">{{ __('Jinsi *') }}</label>
 
             <div class="select-radio6 pt-50">
                 <div class="radio">
@@ -48,22 +48,20 @@
     <div class="col-md-1"></div>
     <div class="col-md-5">
         <div class="single-form">
-        <label>{{ __('Viloyat') }}</label>
+        <label>{{ __('Viloyat *') }}</label>
             <div class="select-option">
                 <select size="5" name="region_id" id="region_id" class="form-control">
-                    <option value="0">Viloyatni tanlang...</option>
-                    <optgroup>
+                    <option value="" disabled selected>Viloyatni tanlang...</option>
                         @foreach($regions as $region)
                             <option value="{{ $region->id }}" data-id="{{ $region->id }}" >{{ $region->name_uz }}</option>
                         @endforeach
-                    </optgroup>
                 </select>
             </div>
        </div>
     </div>
     <div class="col-md-5">
         <div class="single-form">
-        <label>{{ __('Tuman') }}</label>
+        <label>{{ __('Tuman *') }}</label>
             <div class="select-option">
                 <select name="city_id" id="city_id" class="form-control">
                     <option value="0">Tumanni tanlang...</option>
@@ -79,38 +77,38 @@
     <div class="col-md-1"></div>
     <div class="col-md-3">
         <div class="single-form">
-            <label for="birthdate">{{ __('Tug‘ilgan kun') }}</label>
+            <label for="birthdate">{{ __('Tug‘ilgan sana *') }}</label>
             <input id="birthdate" type="text" class="birth_date form-control" name="birthdate" value="{{ old('birthdate') ?? $citizen->birthdate }}" required>
         </div>
     </div>
     <div class="col-md-5">
         <div class="single-form">
-        <label>{{ __('Mutaxassislik') }}</label>
+        <label>{{ __('Mutaxassislik *') }}</label>
             <div class="select-option">
-                <select name="specialist" id="specialist" class="form-control">
-                    <option value="0">Mutaxassislikni tanlang...</option>
-                    <optgroup>
+                <select size="5" name="specialist" id="specialist" class="form-control">
+                    <option value="" disabled selected>Mutaxassislikni tanlang...</option>
                         @foreach($specialists as $specialist)
                             <option value="{{ $specialist->id }}" data-id="{{ $specialist->id }}" >{{ $specialist->name_uz }}</option>
                         @endforeach
-                    </optgroup>
                 </select>
             </div>
        </div>
-    </div>
+    </div>  
     <div class="col-md-2">
         <div class="single-form">
-            <label for="skill">{{ __('Mehnat staji') }}</label>
+            <label for="skill">{{ __('Mehnat staji *') }}</label>
             <input id="skill" type="number" max="30" min="0" name="skill" value="{{ old('skill') ?? $citizen->skill }}" class="form-control" required>
         </div>
     </div>
 </div>
 
-<!-- <style type="text/css">
-    .wrapper{
-        height: 10px;
+<style type="text/css">
+
+    select {
+        height:30px;
     }
-</style> -->
+
+</style>
 
 
 

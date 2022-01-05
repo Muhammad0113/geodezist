@@ -16,10 +16,10 @@
                             <th>Viloyat</th>
          					<th>Tuman</th>
          					<th>Passport</th>
-         					<th>Tug‘. yili</th>
+         					<th>Tug‘ sana</th>
          					<th>Jinsi</th>
                             <th>Telefon</th>
-                            <th>Mutaxassisligi</th>
+                            <th>Mutaxassislik</th>
                             <th>Staj</th>
          					<th>Amallar</th>
          				</tr>

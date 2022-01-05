@@ -50,7 +50,7 @@
                                         <label for="region_id">{{ __('Viloyat') }}</label>
                                         <div class="select-option mb-10">
                                             <select name="region_id" id="region_id">
-                                                <option value="0">Viloyatni tanlang...</option>
+                                                <option value="" disabled selected>Viloyatni tanlang...</option>
                                                     @foreach($regions as $region)
                                                         <option value="{{ $region->id }}" data-id="{{ $region->id }}" >{{ $region->name_uz }}</option>
                                                     @endforeach

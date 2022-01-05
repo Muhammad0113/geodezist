@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row justify-content-center">
                     <div class="col-md-12">
-                    	<h2 class="hero-cap text-center pt-20">Rezume qoldirish</h2><br>
+                    	<h2 class="hero-cap text-center pt-20">Kitob qoshish</h2><br>
              		</div>
 
                     <div class="col-md-9 apply-wrapper">
@@ -18,9 +18,9 @@
 							        </ul>
 							    </div>
 						@endif
-						<form method="post" action="{{ route('citizens.store') }}">
+						<form method="post" action="{{ route('books.store') }}" enctype="multipart/form-data">
 						  @csrf
-						  @include('citizens.form')
+						  @include('books.form')
 						 
 						  <div class="row">
 						  	<div class="col-md-1"></div>

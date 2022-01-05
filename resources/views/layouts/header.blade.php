@@ -17,7 +17,7 @@
                                 <ul id="navigation">
                                     @foreach($menus as $menu)      
                                             @if(!$menu->menu_id)
-                                                <li><a href="{{ route('menus.show', ['menu' => $menu->slug]) }}">{{ $menu->name }}</a>    
+                                                <li><a href="#">{{ $menu->name }}</a>    
                                             @endif
                                             @if($menu->is_submenu)
                                                 <ul class="submenu">
